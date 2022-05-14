@@ -10,24 +10,31 @@
 
 </head>
 <body>
-    <h1>BIENVENUE DANS LA PLATEFORME DANS LA PAGE D'INSCRIPTION</h1>
+    <div class="container">
+        <h3>Bienvenue </h3>
+    </div>
+   <div class="container-fluid">
+        <form class="container" method="POST">
+
+                <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'<p>';} ?>
+                <div class="mb-3">
+                <label for="" class="form-label">Numero Carte Etudiant</label>
+                <input type="text" class="form-control"  placeholder="Numero de votre carte etudiant" name="numero">
+                </div>
+
+                <div class="mb-3">
+                <label for="" class="form-label">Mots de passe</label>
+                <input type="password" class="form-control"  placeholder="password" name="mdp">
+                </div> 
+                <button type="submit" class="btn btn-dark" name="validate">S'inscrire</button>
+                <br><br>
+                <a href="signup.php"> <p>Vous n'avez pas de compte? S'inscrire?</p></a>
+                
+            </form>
+
+   </div>
     
-<form class="container" method="POST">
 
-<?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'<p>';} ?>
-        <div class="mb-3">
-        <label for="" class="form-label">Numero Carte Etudiant</label>
-        <input type="text" class="form-control"  placeholder="Numero de votre carte etudiant" name="numero">
-        </div>
-
-        <div class="mb-3">
-        <label for="" class="form-label">Mots de passe</label>
-        <input type="password" class="form-control"  placeholder="password" name="mdp">
-        </div> 
-        <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
-        <a href="signup.php"> <p>Vous n'avez pas de compte? S'inscrire?</p></a>
-        
-</form>
 
     
 </body>

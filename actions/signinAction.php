@@ -27,10 +27,6 @@ if(isset($_POST['validate'])){
             }else{
                 $errorMsg = "Votre mot de passe est incorrecte";
             }
-
-
-
-
          }else{
             $errorMsg = "Votre Numero de carte est incorrecte ";
          }
